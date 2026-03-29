@@ -1,17 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  plugins: [react(), tailwindcss()],
 
-  base: import.meta.env.VITE_BASE_PATH || '/surflessontamoco/',
-
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-  },
+  base: '/', 
 })
